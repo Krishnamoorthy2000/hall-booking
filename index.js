@@ -11,7 +11,7 @@ let rooms = [];
 let bookings = [];
 
 // Create a new room with the following details: number of seats, amenities, and price
-app.post("/rooms", (req, res) => {
+app.post("/room", (req, res) => {
   const room = {
     id: rooms.length + 1,
     seats: req.body.seats,
